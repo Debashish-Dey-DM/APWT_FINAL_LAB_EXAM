@@ -13,7 +13,7 @@ const getjobs=()=>{
       })
     })
   }
- const [Joblist, setJoblist] = useState([]);
+ const [joblist, setJoblist] = useState([]);
   const deleteuser = (id)=>{
 
     fetch('http://localhost:8000/api/jobsDelete/'+id,
@@ -132,7 +132,7 @@ useEffect(() => {
           </Route>
           <Route path='/job/list'>
             <div>
-                <jobsList list={Joblist} deleteCallback={deleteuser}/>
+                <jobsList list={joblist} deleteCallback={deleteuser}/>
             </div>
           </Route>
           <Route path='/job/create'>
