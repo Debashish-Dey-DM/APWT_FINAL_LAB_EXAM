@@ -75,7 +75,7 @@ const getjobs=()=>{
     <Router>
       <Switch>
           <Route exact path='/'> 
-              <h1>Welcome to Product page!</h1>
+              <h1>Job</h1>
           </Route>
           <Route path='/job/list'>
             <div>
